@@ -13,6 +13,7 @@ MAX_RPM_FAST = 3000
 CURRENT_LIM = 60.0        # A continu
 CURRENT_LIM_PEAK = 60.0   # A peak
 TORQUE_LIM = 4.0        # Nm
+TORQUE_MAX_RPM = 900    # RPM
 
 # Trajectory — normal mode
 ACCEL_LIMIT = 50.0        # tours/s²

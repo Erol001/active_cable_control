@@ -81,9 +81,9 @@ class WASPGui:
         self.torque_entry.insert(0, "0.05")
         self.torque_entry.grid(row=0, column=1, padx=5)
 
-        ttk.Label(torque_frame, text="Vel limit (tr/s):").grid(row=1, column=0, sticky="w", padx=5)
+        ttk.Label(torque_frame, text="Vel limit (RPM):").grid(row=1, column=0, sticky="w", padx=5)
         self.torque_vel_limit = ttk.Entry(torque_frame, width=8)
-        self.torque_vel_limit.insert(0, "10")
+        self.torque_vel_limit.insert(0, "900")
         self.torque_vel_limit.grid(row=1, column=1, padx=5)
 
         btn_t = ttk.Frame(torque_frame)
@@ -343,7 +343,7 @@ class WASPGui:
         self._send({
             'torque_start': {
                 'torque':     float(self.torque_entry.get()),
-                'vel_limit':  float(self.torque_vel_limit.get()),
+                'vel_limit':  float(self.torque_vel_limit.get()) / 60,
             }
         })
 
