@@ -1,6 +1,6 @@
-# Active Cable Control — WASP
+# Active Cable Control WASP
 
-Active cable control system for a tethered aircraft (WASP). A Raspberry Pi runs the control server; a PC runs the GUI client over TCP.
+Active cable control system for the Winged Aircraft Safety Platform (WASP). A Raspberry Pi runs the control server; a PC runs the GUI client over TCP.
 
 ## System Overview
 
