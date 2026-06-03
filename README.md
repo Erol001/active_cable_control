@@ -87,6 +87,7 @@ MAX_RPM_SLOW     = 500
 MAX_RPM_FAST     = 3000
 CURRENT_LIM      = 60.0       # A
 TORQUE_LIM       = 4.0        # Nm
+TORQUE_MAX_RPM   = 900        # RPM
 ACCEL_LIMIT      = 50.0       # turns/s²
 HALL_PIN         = 6
 SWITCH_PIN       = 18
