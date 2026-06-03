@@ -132,3 +132,8 @@ Commands and telemetry are exchanged as newline-delimited JSON over a TCP socket
 ## Calibration
 
 The calibration routine spins the motor at `[100, 200, 400, 600, 800]` RPM, measures both motor and spool RPM, and saves the gear ratio measurements to a CSV file.
+
+## Acknowledgements
+
+- **Authors:** Erol Özbekler
+- **Affiliation:** [Laboratory of Intelligent Systems (LIS)](https://lis.epfl.ch), EPFL
