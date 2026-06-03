@@ -26,7 +26,7 @@ The spool winds/unwinds a cable whose length is controlled by targeting motor tu
 
 | File | Description |
 |------|-------------|
-| `server.py` | Main server — runs on Raspberry Pi, manages all hardware and control loops |
+| `server.py` | Main server runs on Raspberry Pi, manages all hardware and control loops |
 | `odrive_motor.py` | ODrive interface (connect, enable, position/velocity/torque control) |
 | `hall_sensor.py` | Hall effect sensor reader (RPM, total turns, direction) |
 | `spool_tracker.py` | Cable length estimation from motor turns and gear ratio |
@@ -40,12 +40,12 @@ The spool winds/unwinds a cable whose length is controlled by targeting motor tu
 
 ## Control Modes
 
-- **Slow mode** — gear ratio `(36/100) × (45/80)`, max 500 RPM — used when aircraft is at the bottom
-- **Fast mode** — gear ratio `0.2`, max 3000 RPM — used during free flight
-- **Torque mode** — direct torque control with velocity limit
-- **Tracking** — sinusoidal reference trajectory (configurable center, amplitude, frequency)
-- **PRBS** — pseudo-random binary sequence input for system identification
-- **Steps** — programmed step sequence for experiments
+- **Slow mode** gear ratio `(36/100) × (45/80)`, max 900 RPM used when aircraft is at the bottom
+- **Fast mode** gear ratio `0.2`, max 3000 RPM used during free flight
+- **Torque mode** direct torque control with velocity limit
+- **Tracking** sinusoidal reference trajectory (configurable center, amplitude, frequency)
+- **PRBS** pseudo-random binary sequence input for system identification
+- **Steps** programmed step sequence for experiments
 
 ## Getting Started
 
